@@ -1,0 +1,103 @@
+body{
+    margin:0;
+}
+
+/*nesnelerin birbiri ile olan mesafesini belirler.*/
+
+p{color:white;font-size:18px;text-align: justify;}
+h1{color: #e4b007;}
+h3{color: #e4b007;}
+b{color: #e4b007;}
+
+.icerik {
+    min-height: 650px; /*Minimum yükseklik budur. Ama yükseklik arttıkça sayfa oto büyür.*/
+    margin-top: 40px;
+    padding: 50px;
+    
+}
+
+.ortala{
+    width:500px;
+    height: 250px;
+    display: table;
+    position: relative;
+    overflow: hidden; /* belirlenen alanın dışında kalan kısımları gizlemeye yarar*/
+    text-align:center;
+    margin:0 auto;
+}
+
+.footer{
+    background: #e4b007;
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+html { 
+    background: url(https://i1.wp.com/kriptokoin.com/wp-content/uploads/2021/07/altcoin-4.jpg?fit=1499%2C845&ssl=1) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+/*Önbellekteki dosyaları silmek için Ctrl + f5 | ctrl + shift + r | ctrl + r 
+tarayıcı kısayoluna göre değişiklik gösterebileceği için önbelleği temizle.*/
+#menu {
+    position:fixed;
+    z-index: 999;
+    width: 100%;
+    top:  0;
+    font-family: sans-serif;
+    background-color: #e4b007;
+}
+
+#menu ul {
+    list-style: none;
+    padding-left: 0px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#menu ul li {
+    display: inline-block;
+    width: 150px;
+    height: 50px;
+    line-height: 50px; /*Satır arası yükseklik*/
+    text-align: center;
+}
+
+#menu ul li a {
+    text-decoration: none; /*yazı altı çizgisi  */
+    color: white;
+}
+
+#menu ul li a:hover {
+color: black;
+}
+
+#menu ul li a::before{
+    content: "<"; /*öncesine ve sonrasına özellik eklemek için*/
+    margin-right: 2px;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+#menu ul li a::after{
+    content: ">";
+    margin-left: 2px;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+#menu ul li a:hover:before{
+    opacity: 1;
+    margin-right: 5px;
+}
+
+#menu ul li a:hover:after{
+    opacity: 1;
+    margin-left: 5px;
+}
