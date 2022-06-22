@@ -1,2 +1,2 @@
 # MyFirstWebsite
-Kripto para birimlerini tanıtan web sitem
+Kripto para birimlerini tanıttığım web sitem
